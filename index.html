@@ -1,66 +1,75 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Tu Nombre</title>
+  <meta name="description" content="Portfolio of Santiago Mosler - Musician, Developer and Creator.">
+  <title>Santiago Mosler | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <!-- 🏠 Sección Inicio -->
-  <header id="home">
-    <h1>Hola, soy Santiago Mosler</h1>
-    <p>Desarrollador web full stack</p>
-    <a href="#projects" class="btn">Ver mis proyectos</a>
+  <!-- 🔹 Header / Navbar -->
+  <header class="navbar">
+    <div class="logo">Santiago<span>Mosler</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" id="mobile-menu">☰</div>
   </header>
 
-  <!-- 💻 Sección Proyectos -->
-  <section id="projects">
-    <h2>Proyectos</h2>
-    <div class="projects-grid">
-      <!-- Proyecto ejemplo -->
-      <div class="project-card">
-        <img src="img/landing.jpg" alt="Landing page ejemplo">
-        <h3>Landing Cafetería</h3>
-        <p>Landing page responsive para un café local.</p>
-        <a href="https://tulanding.netlify.app" target="_blank">Ver demo</a>
-        <a href="https://github.com/tuperfil/landing-cafe" target="_blank">Código</a>
-      </div>
-
-      <!-- Copiás y pegás más proyectos acá -->
+  <!-- 🔹 Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Santiago Mosler</span></h1>
+      <p>Musician • Developer • Creator</p>
+      <a href="#projects" class="btn">View My Work</a>
     </div>
   </section>
 
-  <!-- 🛠 Sección Servicios -->
-  <section id="services">
-    <h2>Servicios</h2>
-    <ul>
-      <li>✔ Landing pages rápidas y modernas</li>
-      <li>✔ Tiendas online con pago integrado</li>
-      <li>✔ Clones de apps y sistemas web</li>
-      <li>✔ Mantenimiento y optimización de sitios</li>
-    </ul>
+  <!-- 🔹 About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate creator blending technology, art, and sound.
+      With experience in software development, music production, and
+      creative projects, I aim to bring ideas to life in unique ways.
+    </p>
   </section>
 
-  <!-- 🙋‍♂️ Sobre mí -->
-  <section id="about">
-    <h2>Sobre mí</h2>
-    <p>Soy desarrollador de Mar del Plata, apasionado por crear soluciones web que combinan diseño y funcionalidad.</p>
+  <!-- 🔹 Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A modern and minimalist portfolio showcasing my work.</p>
+      </div>
+      <div class="project-card">
+        <h3>Music Production</h3>
+        <p>Original compositions blending rock, electronic and orchestral elements.</p>
+      </div>
+      <div class="project-card">
+        <h3>Tech Projects</h3>
+        <p>Exploring FPGA, automation, and AI-driven applications.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- 📩 Contacto -->
-  <section id="contact">
-    <h2>Contacto</h2>
-    <form action="https://formspree.io/f/xxxxxxx" method="POST">
-      <input type="text" name="nombre" placeholder="Tu nombre" required>
-      <input type="email" name="email" placeholder="Tu correo" required>
-      <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+  <!-- 🔹 Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Interested in collaborating? Let's connect.</p>
+    <a href="mailto:santiagomosler@gmail.com" class="btn">Email Me</a>
   </section>
 
+  <!-- 🔹 Footer -->
   <footer>
-    <p>© 2025 - Santiago Mosler</p>
+    <p>© 2025 Santiago Mosler. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
